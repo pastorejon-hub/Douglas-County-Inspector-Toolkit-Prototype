@@ -50,6 +50,12 @@ body.dark .inspection-actions button.secondary{background:#294d3d;color:#e6f5e9;
 body.dark .inspection-actions button.selected{background:#315f47;color:#e6f5e9}
 @media(max-width:550px){.inspection-highlight{padding:15px}.inspection-actions button{flex:1 1 100%}}
  .hvac-checklist{display:grid;gap:0;margin-top:12px}.hvac-check{display:flex;align-items:flex-start;gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);line-height:1.45;cursor:pointer}.hvac-check:last-child{border-bottom:0}.hvac-check input{width:22px;height:22px;flex:none;accent-color:#3d9d74;margin-top:1px}.hvac-check span{flex:1} 
+/* Consistent two-up utility buttons, including iPad and phone widths. */
+.utility-strip{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:18px!important;row-gap:18px!important;padding:18px 0 0!important;margin:0 0 18px!important;align-items:stretch!important}
+.utility-strip .gate-compact{box-sizing:border-box!important;width:100%!important;max-width:none!important;min-width:0!important;min-height:64px!important;margin:0!important;padding:12px 16px!important;flex:none!important;gap:10px!important}
+.utility-strip .gate-compact strong{font-size:clamp(14px,1.65vw,18px);line-height:1.2}
+.utility-strip .gate-compact .star{flex:none}
+@media(max-width:480px){.utility-strip{column-gap:10px!important}.utility-strip .gate-compact{padding:10px 9px!important;gap:6px!important}.utility-strip .gate-compact .star{font-size:18px!important}.utility-strip .gate-compact .end{font-size:16px!important}.utility-strip .gate-compact strong{font-size:13px!important}}
 /* Ensure the quick-tool row remains visibly separated from both adjacent home tiles. */
 #quickHome{margin-bottom:0}.utility-strip{padding-top:18px!important;padding-bottom:0!important;margin-bottom:18px!important}.utility-strip .gate-compact{margin:0!important}
 </style><style>header{margin:0!important;border-bottom:8px solid #86223d!important}.county-maroon-bar{margin:0!important;border:0!important;padding:0!important;display:block!important;line-height:0!important}header + .county-maroon-bar{margin-top:0!important}
